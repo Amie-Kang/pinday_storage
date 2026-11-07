@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- viewport-fit=cover가 있어야 env(safe-area-inset-*)가 노치·홈 바 여백을 준다 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!-- 바깥 출처는 Google 지도(Maps JavaScript + Map ID)에 필요한 것만. 'wasm-unsafe-eval'은 벡터 지도의 WebAssembly 컴파일만 허용한다(PC 앱 CSP와 같은 범위) -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://*.googleapis.com https://*.gstatic.com https://*.google.com blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.googleusercontent.com; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://*.googleapis.com https://*.google.com https://*.gstatic.com data: blob:; manifest-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta name="apple-mobile-web-app-title" content="Pinday" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="icons/icon-192.png" />
+    <!-- manifest 링크는 vite-plugin-pwa가 넣는다 -->
+    <title>Pinday</title>
+    <script type="module" crossorigin src="./assets/index-CbxeuIgd.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B-NUQYtc.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
